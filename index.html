@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bianca &amp; Ajay — 20&ndash;23 June 2027, Sintra</title>
+<meta name="description" content="Join us in Sintra, Portugal as Bianca and Ajay tie the knot, 20–23 June 2027." />
+
+<link rel="icon" href="assets/monogram.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav class="nav">
+    <a href="#top" class="nav__brand">B &amp; A</a>
+    <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="nav-links">
+      <a href="#schedule">Schedule</a>
+      <a href="#travel">Travel</a>
+      <a href="#rsvp">RSVP</a>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="top">
+    <div class="hero__sky" aria-hidden="true"></div>
+    <svg class="sprig sprig--tl" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape"/></svg>
+    <svg class="sprig sprig--br" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape"/></svg>
+
+    <div class="hero__content">
+      <p class="eyebrow">Together with our families</p>
+      <img class="hero__logo" src="assets/monogram.png" alt="B and A monogram, intertwined script letters with pink flowers" />
+      <h1 class="hero__names">Bianca <span class="hero__and">and</span> Ajay</h1>
+      <p class="hero__script">Save the Date</p>
+      <p class="hero__date">20&ndash;23 June 2027</p>
+      <p class="hero__place">Sintra, Portugal</p>
+
+      <div class="divider" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+
+      <p class="hero__note">Formal invitation to follow. In the meantime, please save the date
+        and let us know you're coming.</p>
+
+      <a href="#rsvp" class="btn">RSVP</a>
+    </div>
+  </header>
+
+  <!-- ===== Schedule ===== -->
+  <section class="section" id="schedule">
+    <p class="section__eyebrow">The Celebration</p>
+    <h2 class="section__title">A Few Days Together</h2>
+    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+
+    <div class="events">
+      <article class="event">
+        <span class="event__day">Day One</span>
+        <h3 class="event__name">Vatna</h3>
+        <p class="event__desc">An intimate family ceremony to begin our celebrations.</p>
+      </article>
+      <article class="event">
+        <span class="event__day">Day One</span>
+        <h3 class="event__name">Welcome Party</h3>
+        <p class="event__desc">Join us for an evening of drinks and good company as we kick things off.</p>
+      </article>
+      <article class="event">
+        <span class="event__day">Day Two</span>
+        <h3 class="event__name">Sangeet</h3>
+        <p class="event__desc">A night of music, dance, and celebration with family and friends.</p>
+      </article>
+      <article class="event">
+        <span class="event__day">Day Three</span>
+        <h3 class="event__name">Anand Karaj</h3>
+        <p class="event__desc">Our Sikh wedding ceremony, uniting our two families.</p>
+      </article>
+      <article class="event">
+        <span class="event__day">Day Three</span>
+        <h3 class="event__name">Reception</h3>
+        <p class="event__desc">Dinner, dancing, and a celebration to close out our wedding weekend.</p>
+      </article>
+    </div>
+    <p class="section__footnote">Exact times and locations for each event will be included in your formal invitation.</p>
+  </section>
+
+  <!-- ===== Travel ===== -->
+  <section class="section section--tinted" id="travel">
+    <p class="section__eyebrow">Getting There</p>
+    <h2 class="section__title">Sintra, Portugal</h2>
+    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+    <p class="section__body">
+      Nestled in the hills outside Lisbon, Sintra is a fairytale town of pastel palaces,
+      mossy gardens, and cobblestone streets. We'll be celebrating over several days, so
+      we recommend arriving a day or two early to explore. More details on accommodations
+      and travel will be shared in the formal invitation.
+    </p>
+  </section>
+
+  <!-- ===== RSVP ===== -->
+  <section class="section" id="rsvp">
+    <main class="card">
+      <svg class="card__arch" viewBox="0 0 460 90" aria-hidden="true">
+        <path d="M10,90 L10,55 C10,15 90,0 230,0 C370,0 450,15 450,55 L450,90"
+              fill="none" stroke="currentColor" stroke-width="1.25"/>
+      </svg>
+
+      <h2 class="card__title">Répondez s'il vous plaît</h2>
+      <p class="card__subtitle">One RSVP per household covers your whole party.</p>
+
+      <form id="rsvp-form" novalidate>
+
+        <div class="hp-field" aria-hidden="true">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="field">
+          <label for="fullName">Full name(s) <span class="req">*</span></label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g. Priya &amp; Sam Sharma" required />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Optional" />
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend>Will you be joining us? <span class="req">*</span></legend>
+          <div class="radio-group">
+            <label class="radio"><input type="radio" name="attending" value="Joyfully accepts" required /> Joyfully accepts</label>
+            <label class="radio"><input type="radio" name="attending" value="Regretfully declines" required /> Regretfully declines</label>
+          </div>
+        </fieldset>
+
+        <div class="field" id="party-size-field">
+          <label for="partySize">Number attending in your party</label>
+          <input type="number" id="partySize" name="partySize" min="1" max="10" value="1" />
+        </div>
+
+        <fieldset class="field" id="events-field">
+          <legend>Events you'll attend</legend>
+          <div class="checkbox-group">
+            <label class="checkbox"><input type="checkbox" name="events" value="Welcome Party" /> Welcome Party</label>
+            <label class="checkbox"><input type="checkbox" name="events" value="Sangeet" /> Sangeet</label>
+            <label class="checkbox"><input type="checkbox" name="events" value="Anand Karaj (Ceremony)" /> Anand Karaj (Ceremony)</label>
+            <label class="checkbox"><input type="checkbox" name="events" value="Reception" /> Reception</label>
+          </div>
+        </fieldset>
+
+        <div class="field" id="dietary-field">
+          <label for="dietary">Dietary restrictions or allergies</label>
+          <textarea id="dietary" name="dietary" rows="2" placeholder="Let us know how to take care of you"></textarea>
+        </div>
+
+        <div class="field" id="song-field">
+          <label for="song">A song that will get you on the dance floor</label>
+          <input type="text" id="song" name="song" placeholder="Optional" />
+        </div>
+
+        <div class="field">
+          <label for="message">A note for Bianca &amp; Ajay</label>
+          <textarea id="message" name="message" rows="3" placeholder="Optional"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          <span class="submit-btn__text">Send RSVP</span>
+        </button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+  </section>
+
+  <footer class="footer">
+    <img class="footer__logo" src="assets/monogram.png" alt="" aria-hidden="true" />
+    <p>With love,<br/>Bianca &amp; Ajay</p>
+  </footer>
+
+  <!-- ===== Reusable decorative SVG shapes ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="sprig-shape">
+        <path d="M70,140 C70,100 65,70 55,45" fill="none" stroke="#7A9977" stroke-width="2"/>
+        <path d="M55,45 C48,50 40,50 34,44" fill="none" stroke="#7A9977" stroke-width="1.5"/>
+        <ellipse cx="30" cy="41" rx="9" ry="6" fill="#DF9FB3" transform="rotate(-20 30 41)"/>
+        <path d="M60,75 C52,80 44,80 38,73" fill="none" stroke="#7A9977" stroke-width="1.5"/>
+        <ellipse cx="34" cy="70" rx="8" ry="5.5" fill="#DF9FB3" transform="rotate(-15 34 70)"/>
+        <path d="M63,55 C70,50 76,50 82,55" fill="none" stroke="#7A9977" stroke-width="1.5"/>
+        <circle cx="86" cy="57" r="6" fill="#EAC0CE"/>
+      </g>
+      <g id="divider-shape">
+        <line x1="0" y1="12" x2="120" y2="12" stroke="#A9BE9F" stroke-width="1"/>
+        <line x1="180" y1="12" x2="300" y2="12" stroke="#A9BE9F" stroke-width="1"/>
+        <path d="M140,12 L150,4 L160,12 L150,20 Z" fill="#DF9FB3"/>
+      </g>
+    </defs>
+  </svg>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
