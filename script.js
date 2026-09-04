@@ -17,6 +17,19 @@
     );
   }
 
+  // ---- booking link (Penha Longa) ----
+  const bookingLink = document.getElementById("booking-link");
+  const bookingNote = document.getElementById("booking-note");
+  if (bookingLink) {
+    if (typeof BOOKING_LINK === "string" && BOOKING_LINK.trim()) {
+      bookingLink.href = BOOKING_LINK.trim();
+      if (bookingNote) bookingNote.style.display = "none";
+    } else {
+      bookingLink.setAttribute("aria-disabled", "true");
+      bookingLink.addEventListener("click", (e) => e.preventDefault());
+    }
+  }
+
   // ---- RSVP form ----
   const form = document.getElementById("rsvp-form");
   if (!form) return;
@@ -26,13 +39,12 @@
   const partySizeField = document.getElementById("party-size-field");
   const eventsField = document.getElementById("events-field");
   const dietaryField = document.getElementById("dietary-field");
-  const songField = document.getElementById("song-field");
 
   const attendingRadios = form.querySelectorAll('input[name="attending"]');
 
   function syncDecliningState() {
-    const declined = form.querySelector('input[name="attending"]:checked')?.value === "Regretfully declines";
-    [partySizeField, eventsField, dietaryField, songField].forEach((el) => {
+    const declined = form.querySelector('input[name="attending"]:checked')?.value === "Not Attending";
+    [partySizeField, eventsField, dietaryField].forEach((el) => {
       el.style.display = declined ? "none" : "";
     });
   }
@@ -52,7 +64,6 @@
       partySize: (formData.get("partySize") || "").toString(),
       events: formData.getAll("events").join(", "),
       dietary: (formData.get("dietary") || "").toString().trim(),
-      song: (formData.get("song") || "").toString().trim(),
       message: (formData.get("message") || "").toString().trim(),
       submittedAt: new Date().toISOString(),
     };

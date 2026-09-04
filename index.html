@@ -31,8 +31,9 @@
   <!-- ===== Hero ===== -->
   <header class="hero" id="top">
     <div class="hero__sky" aria-hidden="true"></div>
-    <svg class="sprig sprig--tl" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape"/></svg>
-    <svg class="sprig sprig--br" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape"/></svg>
+    <svg class="hero__skyline" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#skyline-shape" xlink:href="#skyline-shape"/></svg>
+    <svg class="sprig sprig--tl" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape" xlink:href="#sprig-shape"/></svg>
+    <svg class="sprig sprig--br" viewBox="0 0 140 140" aria-hidden="true"><use href="#sprig-shape" xlink:href="#sprig-shape"/></svg>
 
     <div class="hero__content">
       <p class="eyebrow">Together with our families</p>
@@ -42,7 +43,7 @@
       <p class="hero__date">20&ndash;23 June 2027</p>
       <p class="hero__place">Sintra, Portugal</p>
 
-      <div class="divider" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+      <div class="divider" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape" xlink:href="#divider-shape"/></svg></div>
 
       <p class="hero__note">Formal invitation to follow. In the meantime, please save the date
         and let us know you're coming.</p>
@@ -55,49 +56,49 @@
   <section class="section" id="schedule">
     <p class="section__eyebrow">The Celebration</p>
     <h2 class="section__title">A Few Days Together</h2>
-    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape" xlink:href="#divider-shape"/></svg></div>
 
     <div class="events">
       <article class="event">
-        <span class="event__day">Day One</span>
-        <h3 class="event__name">Vatna</h3>
-        <p class="event__desc">An intimate family ceremony to begin our celebrations.</p>
-      </article>
-      <article class="event">
-        <span class="event__day">Day One</span>
+        <span class="event__day">June 20</span>
         <h3 class="event__name">Welcome Party</h3>
         <p class="event__desc">Join us for an evening of drinks and good company as we kick things off.</p>
       </article>
       <article class="event">
-        <span class="event__day">Day Two</span>
+        <span class="event__day">June 21</span>
         <h3 class="event__name">Sangeet</h3>
         <p class="event__desc">A night of music, dance, and celebration with family and friends.</p>
       </article>
       <article class="event">
-        <span class="event__day">Day Three</span>
+        <span class="event__day">June 22</span>
         <h3 class="event__name">Anand Karaj</h3>
         <p class="event__desc">Our Sikh wedding ceremony, uniting our two families.</p>
       </article>
       <article class="event">
-        <span class="event__day">Day Three</span>
+        <span class="event__day">June 23</span>
         <h3 class="event__name">Reception</h3>
         <p class="event__desc">Dinner, dancing, and a celebration to close out our wedding weekend.</p>
+        <p class="event__dress"><strong>Black Tie Formal</strong> &mdash; men, black tuxedos; women, formal Indian attire.</p>
       </article>
     </div>
-    <p class="section__footnote">Exact times and locations for each event will be included in your formal invitation.</p>
+    <p class="section__footnote">Exact times will be included in your formal invitation. All events will be held at Penha Longa.</p>
   </section>
 
   <!-- ===== Travel ===== -->
   <section class="section section--tinted" id="travel">
     <p class="section__eyebrow">Getting There</p>
-    <h2 class="section__title">Sintra, Portugal</h2>
-    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape"/></svg></div>
+    <h2 class="section__title">Penha Longa, Sintra</h2>
+    <div class="divider divider--center" aria-hidden="true"><svg viewBox="0 0 300 24"><use href="#divider-shape" xlink:href="#divider-shape"/></svg></div>
     <p class="section__body">
-      Nestled in the hills outside Lisbon, Sintra is a fairytale town of pastel palaces,
-      mossy gardens, and cobblestone streets. We'll be celebrating over several days, so
-      we recommend arriving a day or two early to explore. More details on accommodations
-      and travel will be shared in the formal invitation.
+      All of our events will be held at Penha Longa, set in the hills outside Lisbon
+      among pastel palaces, mossy gardens, and cobblestone streets. We recommend
+      arriving a day or two early to explore. More details on travel will be shared
+      in the formal invitation.
     </p>
+    <a class="btn btn--booking" id="booking-link" href="#" target="_blank" rel="noopener">
+      Reserve Your Stay at Penha Longa
+    </a>
+    <p class="section__footnote" id="booking-note">Booking link coming soon.</p>
   </section>
 
   <!-- ===== RSVP ===== -->
@@ -120,7 +121,7 @@
 
         <div class="field">
           <label for="fullName">Full name(s) <span class="req">*</span></label>
-          <input type="text" id="fullName" name="fullName" placeholder="e.g. Priya &amp; Sam Sharma" required />
+          <input type="text" id="fullName" name="fullName" required />
         </div>
 
         <div class="field-row">
@@ -137,8 +138,8 @@
         <fieldset class="field">
           <legend>Will you be joining us? <span class="req">*</span></legend>
           <div class="radio-group">
-            <label class="radio"><input type="radio" name="attending" value="Joyfully accepts" required /> Joyfully accepts</label>
-            <label class="radio"><input type="radio" name="attending" value="Regretfully declines" required /> Regretfully declines</label>
+            <label class="radio"><input type="radio" name="attending" value="Attending" required /> Attending</label>
+            <label class="radio"><input type="radio" name="attending" value="Not Attending" required /> Not Attending</label>
           </div>
         </fieldset>
 
@@ -159,12 +160,7 @@
 
         <div class="field" id="dietary-field">
           <label for="dietary">Dietary restrictions or allergies</label>
-          <textarea id="dietary" name="dietary" rows="2" placeholder="Let us know how to take care of you"></textarea>
-        </div>
-
-        <div class="field" id="song-field">
-          <label for="song">A song that will get you on the dance floor</label>
-          <input type="text" id="song" name="song" placeholder="Optional" />
+          <textarea id="dietary" name="dietary" rows="2"></textarea>
         </div>
 
         <div class="field">
@@ -187,7 +183,7 @@
   </footer>
 
   <!-- ===== Reusable decorative SVG shapes ===== -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <g id="sprig-shape">
         <path d="M70,140 C70,100 65,70 55,45" fill="none" stroke="#7A9977" stroke-width="2"/>
@@ -198,6 +194,114 @@
         <path d="M63,55 C70,50 76,50 82,55" fill="none" stroke="#7A9977" stroke-width="1.5"/>
         <circle cx="86" cy="57" r="6" fill="#EAC0CE"/>
       </g>
+      <g id="skyline-shape">
+        <!-- distant hillside town, soft and hazy -->
+        <g opacity="0.55" filter="url(#soft-blur)">
+          <rect x="900" y="70" width="34" height="46" fill="#E9C9BE"/>
+          <polygon points="895,70 917,54 939,70" fill="#D9A899"/>
+          <rect x="945" y="90" width="30" height="38" fill="#EDD3C6"/>
+          <polygon points="941,90 960,76 979,90" fill="#DDAC9C"/>
+          <rect x="985" y="78" width="26" height="50" fill="#E9C9BE"/>
+          <polygon points="981,78 998,64 1015,78" fill="#D9A899"/>
+          <rect x="1020" y="95" width="32" height="36" fill="#EDD3C6"/>
+          <polygon points="1016,95 1036,80 1056,95" fill="#DDAC9C"/>
+          <rect x="1060" y="82" width="28" height="48" fill="#E9C9BE"/>
+          <polygon points="1056,82 1074,68 1092,82" fill="#D9A899"/>
+        </g>
+
+        <!-- cypress trees -->
+        <g>
+          <path d="M110,300 C96,260 96,220 110,175 C124,220 124,260 110,300 Z" fill="#5B7350"/>
+          <path d="M110,300 C102,265 102,225 110,182" fill="none" stroke="#3F5238" stroke-width="1.5" opacity="0.6"/>
+          <path d="M150,310 C138,270 138,235 150,198 C162,235 162,270 150,310 Z" fill="#4B5F45"/>
+          <path d="M150,310 C144,272 144,238 150,204" fill="none" stroke="#354830" stroke-width="1.5" opacity="0.6"/>
+
+          <path d="M1000,320 C986,278 986,238 1000,196 C1014,238 1014,278 1000,320 Z" fill="#5B7350"/>
+          <path d="M1040,330 C1028,290 1028,252 1040,214 C1052,252 1052,290 1040,330 Z" fill="#4B5F45"/>
+          <path d="M1075,322 C1064,286 1064,250 1075,216 C1086,250 1086,286 1075,322 Z" fill="#5B7350"/>
+        </g>
+
+        <!-- garden rose arch, right side -->
+        <g stroke="#7A8B6E" stroke-width="2" fill="none">
+          <path d="M900,340 C900,250 940,205 985,205 C1030,205 1070,250 1070,340" />
+        </g>
+        <g fill="#DF9FB3">
+          <circle cx="902" cy="322" r="5"/><circle cx="915" cy="280" r="4.5"/><circle cx="935" cy="245" r="5"/>
+          <circle cx="965" cy="216" r="5"/><circle cx="1000" cy="210" r="5"/><circle cx="1032" cy="218" r="4.5"/>
+          <circle cx="1055" cy="248" r="5"/><circle cx="1068" cy="284" r="4.5"/><circle cx="1070" cy="325" r="5"/>
+        </g>
+        <g fill="#8FA184">
+          <ellipse cx="908" cy="300" rx="6" ry="3" transform="rotate(-30 908 300)"/>
+          <ellipse cx="950" cy="230" rx="6" ry="3" transform="rotate(-15 950 230)"/>
+          <ellipse cx="1018" cy="212" rx="6" ry="3" transform="rotate(10 1018 212)"/>
+          <ellipse cx="1062" cy="265" rx="6" ry="3" transform="rotate(30 1062 265)"/>
+        </g>
+
+        <!-- villa -->
+        <g>
+          <!-- main wing -->
+          <rect x="230" y="230" width="360" height="110" fill="#E4B79E" stroke="#B9835F" stroke-width="1.5"/>
+          <polygon points="220,230 410,178 600,230" fill="#CE8F68" stroke="#A96C48" stroke-width="1.5"/>
+          <!-- roof tile ticks -->
+          <g stroke="#B9835F" stroke-width="1" opacity="0.55">
+            <line x1="250" y1="220" x2="256" y2="234"/><line x1="280" y1="211" x2="286" y2="225"/>
+            <line x1="310" y1="202" x2="316" y2="216"/><line x1="340" y1="195" x2="346" y2="209"/>
+            <line x1="370" y1="188" x2="376" y2="202"/><line x1="410" y1="182" x2="410" y2="196"/>
+            <line x1="450" y1="188" x2="444" y2="202"/><line x1="480" y1="195" x2="474" y2="209"/>
+            <line x1="510" y1="202" x2="504" y2="216"/><line x1="540" y1="211" x2="534" y2="225"/>
+            <line x1="570" y1="220" x2="564" y2="234"/>
+          </g>
+          <!-- arched window row -->
+          <g fill="#FBF3E6" stroke="#B9835F" stroke-width="1.5">
+            <path d="M258,340 L258,300 C258,288 268,283 278,283 C288,283 298,288 298,300 L298,340 Z"/>
+            <path d="M318,340 L318,300 C318,288 328,283 338,283 C348,283 358,288 358,300 L358,340 Z"/>
+            <path d="M378,340 L378,300 C378,288 388,283 398,283 C408,283 418,288 418,300 L418,340 Z"/>
+            <path d="M438,340 L438,300 C438,288 448,283 458,283 C468,283 478,288 478,300 L478,340 Z"/>
+            <path d="M498,340 L498,300 C498,288 508,283 518,283 C528,283 538,288 538,300 L538,340 Z"/>
+            <path d="M558,340 L558,300 C558,288 568,283 578,283 C588,283 598,288 598,300 L598,340 Z"/>
+          </g>
+          <!-- balcony rail -->
+          <line x1="240" y1="272" x2="580" y2="272" stroke="#FBF3E6" stroke-width="2"/>
+          <g stroke="#FBF3E6" stroke-width="1.5">
+            <line x1="250" y1="272" x2="250" y2="283"/><line x1="270" y1="272" x2="270" y2="283"/>
+            <line x1="290" y1="272" x2="290" y2="283"/><line x1="310" y1="272" x2="310" y2="283"/>
+            <line x1="330" y1="272" x2="330" y2="283"/><line x1="490" y1="272" x2="490" y2="283"/>
+            <line x1="510" y1="272" x2="510" y2="283"/><line x1="530" y1="272" x2="530" y2="283"/>
+            <line x1="550" y1="272" x2="550" y2="283"/><line x1="570" y1="272" x2="570" y2="283"/>
+          </g>
+
+          <!-- corner tower -->
+          <rect x="600" y="150" width="70" height="190" fill="#EAC6AC" stroke="#B9835F" stroke-width="1.5"/>
+          <polygon points="592,150 635,105 678,150" fill="#CE8F68" stroke="#A96C48" stroke-width="1.5"/>
+          <line x1="635" y1="105" x2="635" y2="88" stroke="#A96C48" stroke-width="2"/>
+          <circle cx="635" cy="85" r="3" fill="#A96C48"/>
+          <path d="M622,300 L622,255 C622,244 628,238 635,238 C642,238 648,244 648,255 L648,300 Z" fill="#FBF3E6" stroke="#B9835F" stroke-width="1.5"/>
+
+          <!-- small side wing -->
+          <rect x="130" y="270" width="110" height="70" fill="#EAC6AC" stroke="#B9835F" stroke-width="1.5"/>
+          <polygon points="122,270 185,240 248,270" fill="#CE8F68" stroke="#A96C48" stroke-width="1.5"/>
+          <path d="M150,340 L150,308 C150,300 156,296 163,296 C170,296 176,300 176,308 L176,340 Z" fill="#FBF3E6" stroke="#B9835F" stroke-width="1.5"/>
+          <path d="M195,340 L195,308 C195,300 201,296 208,296 C215,296 221,300 221,308 L221,340 Z" fill="#FBF3E6" stroke="#B9835F" stroke-width="1.5"/>
+        </g>
+
+        <!-- foreground garden strip -->
+        <path d="M0,360 C200,335 350,352 560,344 C780,336 1000,352 1200,338 L1200,420 L0,420 Z" fill="#B9C9A9"/>
+        <path d="M0,378 C220,360 420,372 620,364 C840,356 1040,370 1200,358 L1200,420 L0,420 Z" fill="#A5B896"/>
+        <path d="M40,398 C220,382 420,392 640,386 C860,380 1020,392 1180,382" fill="none" stroke="#E4DAC3" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+
+        <!-- rose bushes along the path -->
+        <g>
+          <circle cx="130" cy="392" r="7" fill="#DF9FB3"/><circle cx="140" cy="396" r="6" fill="#EAC0CE"/>
+          <circle cx="700" cy="386" r="7" fill="#DF9FB3"/><circle cx="712" cy="390" r="6" fill="#EAC0CE"/>
+          <circle cx="960" cy="380" r="7" fill="#DF9FB3"/><circle cx="972" cy="384" r="6" fill="#EAC0CE"/>
+          <ellipse cx="120" cy="400" rx="10" ry="5" fill="#8FA184"/>
+          <ellipse cx="690" cy="394" rx="10" ry="5" fill="#8FA184"/>
+          <ellipse cx="950" cy="388" rx="10" ry="5" fill="#8FA184"/>
+        </g>
+      </g>
+      <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="2.2"/>
+      </filter>
       <g id="divider-shape">
         <line x1="0" y1="12" x2="120" y2="12" stroke="#A9BE9F" stroke-width="1"/>
         <line x1="180" y1="12" x2="300" y2="12" stroke="#A9BE9F" stroke-width="1"/>

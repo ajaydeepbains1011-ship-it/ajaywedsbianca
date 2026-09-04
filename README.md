@@ -65,12 +65,20 @@ hours.
 - **Colors/fonts** — CSS variables at the top of `styles.css`. The greens
   and pinks are sampled directly from `assets/monogram.png`.
 - **Schedule** — edit the event cards in the `#schedule` section of
-  `index.html`. Times/venues are intentionally left as "to follow" since
-  those weren't finalized; fill them in per event once they are.
+  `index.html`. Times aren't listed yet; add them per event once set.
+- **Booking link** — once you have the Penha Longa room-block link, paste
+  it into `config.js` as `BOOKING_LINK`. Until then, the "Reserve Your Stay"
+  button on the site stays disabled with a "coming soon" note — no code
+  changes needed later, just that one line.
 - **Travel copy** — `#travel` section in `index.html`.
-- **RSVP deadline / events list** — same as before, in the RSVP form markup.
+- **RSVP deadline / events list** — in the RSVP form markup in `index.html`.
 - **Logo** — swap `assets/monogram.png` for a different export any time;
   it's referenced in the hero, the footer, and as the browser favicon.
+
+> If you already deployed the Apps Script and collected any test RSVPs
+> before this update, note that the Sheet's "Song Request" column was
+> removed. Either delete that column manually in the Sheet, or clear the
+> Sheet's header row and let it regenerate on the next submission.
 
 ## Notes on the submission flow
 
